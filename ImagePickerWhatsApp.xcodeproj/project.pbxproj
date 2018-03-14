@@ -28,6 +28,12 @@
 		5157C9D320552E18000B17BC /* ImagePickerWhatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */; };
 		5157C9D820552E18000B17BC /* ImagePickerWhatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157C9D720552E18000B17BC /* ImagePickerWhatsAppTests.swift */; };
 		5157C9DA20552E18000B17BC /* ImagePickerWhatsApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51F461E42059940B001BE479 /* ic_camera_white_24dp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 51F461E32059940B001BE479 /* ic_camera_white_24dp.pdf */; };
+		51F461E620599418001BE479 /* ic_save_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F461E520599418001BE479 /* ic_save_photo.png */; };
+		51F461E820599436001BE479 /* ic_start_rec.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F461E720599436001BE479 /* ic_start_rec.png */; };
+		51F461EA2059943D001BE479 /* ic_stop_rec.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F461E92059943D001BE479 /* ic_stop_rec.png */; };
+		51F461EC20599443001BE479 /* selectedImageGallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F461EB20599443001BE479 /* selectedImageGallery@3x.png */; };
+		51F461EE20599448001BE479 /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 51F461ED20599448001BE479 /* video@3x.png */; };
 		BAF03DE300525A1E18C87E94 /* Pods_ImagePickerWhatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93A183DBAF6D2DC26E4DC0E /* Pods_ImagePickerWhatsApp.framework */; };
 		D291C170A163553D622016A2 /* Pods_ImagePickerWhatsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A10AD62A247EBE7CC1A5DD3 /* Pods_ImagePickerWhatsAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +70,12 @@
 		5157C9D220552E18000B17BC /* ImagePickerWhatsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImagePickerWhatsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5157C9D720552E18000B17BC /* ImagePickerWhatsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerWhatsAppTests.swift; sourceTree = "<group>"; };
 		5157C9D920552E18000B17BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51F461E32059940B001BE479 /* ic_camera_white_24dp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = ic_camera_white_24dp.pdf; path = Assets.xcassets/ic_camera_white_24dp.imageset/ic_camera_white_24dp.pdf; sourceTree = "<group>"; };
+		51F461E520599418001BE479 /* ic_save_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_save_photo.png; path = Assets.xcassets/ic_save_photo.imageset/ic_save_photo.png; sourceTree = "<group>"; };
+		51F461E720599436001BE479 /* ic_start_rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_start_rec.png; path = Assets.xcassets/ic_start_rec.imageset/ic_start_rec.png; sourceTree = "<group>"; };
+		51F461E92059943D001BE479 /* ic_stop_rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_stop_rec.png; path = Assets.xcassets/ic_stop_rec.imageset/ic_stop_rec.png; sourceTree = "<group>"; };
+		51F461EB20599443001BE479 /* selectedImageGallery@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "selectedImageGallery@3x.png"; path = "Assets.xcassets/selectedImageGallery.imageset/selectedImageGallery@3x.png"; sourceTree = "<group>"; };
+		51F461ED20599448001BE479 /* video@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "video@3x.png"; path = "Assets.xcassets/video.imageset/video@3x.png"; sourceTree = "<group>"; };
 		736CEE1C24BF630AE3646730 /* Pods-ImagePickerWhatsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsApp/Pods-ImagePickerWhatsApp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A10AD62A247EBE7CC1A5DD3 /* Pods_ImagePickerWhatsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePickerWhatsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A93A183DBAF6D2DC26E4DC0E /* Pods_ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePickerWhatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,6 +139,12 @@
 				5157C9CD20552E18000B17BC /* Info.plist */,
 				514BA0A420596E1E00744CD3 /* README.md */,
 				514BA0A120596CD900744CD3 /* Assets.xcassets */,
+				51F461E92059943D001BE479 /* ic_stop_rec.png */,
+				51F461EB20599443001BE479 /* selectedImageGallery@3x.png */,
+				51F461E520599418001BE479 /* ic_save_photo.png */,
+				51F461ED20599448001BE479 /* video@3x.png */,
+				51F461E720599436001BE479 /* ic_start_rec.png */,
+				51F461E32059940B001BE479 /* ic_camera_white_24dp.pdf */,
 			);
 			path = ImagePickerWhatsApp;
 			sourceTree = "<group>";
@@ -263,9 +281,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51F461EA2059943D001BE479 /* ic_stop_rec.png in Resources */,
 				514BA1092059919A00744CD3 /* ImagePickerWhatsApp.podspec in Resources */,
+				51F461E620599418001BE479 /* ic_save_photo.png in Resources */,
+				51F461EE20599448001BE479 /* video@3x.png in Resources */,
+				51F461EC20599443001BE479 /* selectedImageGallery@3x.png in Resources */,
 				514BA09D20596BEF00744CD3 /* ImageVideoPickerCell.xib in Resources */,
 				514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */,
+				51F461E42059940B001BE479 /* ic_camera_white_24dp.pdf in Resources */,
+				51F461E820599436001BE479 /* ic_start_rec.png in Resources */,
 				514BA0A520596E1E00744CD3 /* README.md in Resources */,
 				514BA09F20596BEF00744CD3 /* MediaPicker.storyboard in Resources */,
 			);
