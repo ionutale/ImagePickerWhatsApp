@@ -79,7 +79,8 @@ open class ImageVideoPicker: UIViewController {
     }
     
     override open func viewDidLoad() {
-        collectionView.register(UINib(nibName: "ImageVideoPickerCell", bundle: nil), forCellWithReuseIdentifier: "asset")
+        let bundle = Bundle(for: ImageVideoPicker.self)
+        collectionView.register(UINib(nibName: "ImageVideoPickerCell", bundle: bundle), forCellWithReuseIdentifier: "asset")
         preparePhotoLibrary()
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(toggleCollectionViewAction))
         toggleCollectionView.addGestureRecognizer(tap)
