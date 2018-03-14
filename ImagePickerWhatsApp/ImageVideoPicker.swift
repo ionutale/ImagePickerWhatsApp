@@ -74,7 +74,8 @@ open class ImageVideoPicker: UIViewController {
     fileprivate var thumbnailSize: CGSize!
     
     static func makeVCFromStoryboard() -> ImageVideoPicker {
-        return UIStoryboard(name: "MediaPicker", bundle: nil).instantiateViewController(withIdentifier: "picker") as! ImageVideoPicker
+        let bundle = Bundle(for: ImageVideoPicker.self)
+        return UIStoryboard(name: "MediaPicker", bundle: bundle).instantiateViewController(withIdentifier: "picker") as! ImageVideoPicker
     }
     
     override open func viewDidLoad() {
