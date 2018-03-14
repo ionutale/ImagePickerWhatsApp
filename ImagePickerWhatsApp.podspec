@@ -44,7 +44,7 @@ i was searching for a pod that will allow me to select media files like whatsapp
 
   s.exclude_files = '*.md'
   s.source_files = "ImagePickerWhatsApp/*.swift"
-  s.resource  = "ImagePickerWhatsApp/*.{png,jpeg,jpg,storyboard,xib, xcassets}"
+  s.resource  = "ImagePickerWhatsApp/resources/*.{png,jpeg,jpg,pdf,storyboard,xib, xcassets}", "ImagePickerWhatsApp/Assets.xcassets/*", "ImagePickerWhatsApp/*.xcassets"
 
 #s.frameworks = "UIKit", "Foundation", "Photos", "AVFoundation"
 

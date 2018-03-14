@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5145528B2059DEA400427DCE /* ic_start_rec.png in Resources */ = {isa = PBXBuildFile; fileRef = 514552862059DEA400427DCE /* ic_start_rec.png */; };
-		5145528C2059DEA400427DCE /* video@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 514552872059DEA400427DCE /* video@3x.png */; };
-		5145528D2059DEA400427DCE /* ic_stop_rec.png in Resources */ = {isa = PBXBuildFile; fileRef = 514552882059DEA400427DCE /* ic_stop_rec.png */; };
-		5145528E2059DEA400427DCE /* ic_camera_white_24dp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 514552892059DEA400427DCE /* ic_camera_white_24dp.pdf */; };
-		5145528F2059DEA400427DCE /* selectedImageGallery@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5145528A2059DEA400427DCE /* selectedImageGallery@3x.png */; };
-		514552912059DEE000427DCE /* ic_save_photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 514552902059DEE000427DCE /* ic_save_photo.png */; };
 		514BA09720596BEF00744CD3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09020596BEF00744CD3 /* Date+Extension.swift */; };
 		514BA09820596BEF00744CD3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09020596BEF00744CD3 /* Date+Extension.swift */; };
 		514BA09920596BEF00744CD3 /* ImageVideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09120596BEF00744CD3 /* ImageVideoPicker.swift */; };
@@ -52,12 +46,6 @@
 		0444157CA0AB50CD388267CA /* Pods-ImagePickerWhatsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsAppTests/Pods-ImagePickerWhatsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		21A4513942471CE5639D68A2 /* Pods-ImagePickerWhatsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsAppTests/Pods-ImagePickerWhatsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D450458901778983404589 /* Pods-ImagePickerWhatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsApp/Pods-ImagePickerWhatsApp.release.xcconfig"; sourceTree = "<group>"; };
-		514552862059DEA400427DCE /* ic_start_rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_start_rec.png; sourceTree = "<group>"; };
-		514552872059DEA400427DCE /* video@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "video@3x.png"; sourceTree = "<group>"; };
-		514552882059DEA400427DCE /* ic_stop_rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_stop_rec.png; sourceTree = "<group>"; };
-		514552892059DEA400427DCE /* ic_camera_white_24dp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ic_camera_white_24dp.pdf; sourceTree = "<group>"; };
-		5145528A2059DEA400427DCE /* selectedImageGallery@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "selectedImageGallery@3x.png"; sourceTree = "<group>"; };
-		514552902059DEE000427DCE /* ic_save_photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_save_photo.png; sourceTree = "<group>"; };
 		514BA09020596BEF00744CD3 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		514BA09120596BEF00744CD3 /* ImageVideoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPicker.swift; sourceTree = "<group>"; };
 		514BA09220596BEF00744CD3 /* ImageVideoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPickerCell.swift; sourceTree = "<group>"; };
@@ -137,12 +125,6 @@
 				514BA09320596BEF00744CD3 /* ImageVideoPickerCell.xib */,
 				514BA09420596BEF00744CD3 /* MediaPicker.storyboard */,
 				5157C9CD20552E18000B17BC /* Info.plist */,
-				514552892059DEA400427DCE /* ic_camera_white_24dp.pdf */,
-				514552862059DEA400427DCE /* ic_start_rec.png */,
-				514552882059DEA400427DCE /* ic_stop_rec.png */,
-				5145528A2059DEA400427DCE /* selectedImageGallery@3x.png */,
-				514552872059DEA400427DCE /* video@3x.png */,
-				514552902059DEE000427DCE /* ic_save_photo.png */,
 				514BA0A420596E1E00744CD3 /* README.md */,
 				514BA0A120596CD900744CD3 /* Assets.xcassets */,
 			);
@@ -284,12 +266,6 @@
 				514BA1092059919A00744CD3 /* ImagePickerWhatsApp.podspec in Resources */,
 				514BA09D20596BEF00744CD3 /* ImageVideoPickerCell.xib in Resources */,
 				514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */,
-				5145528F2059DEA400427DCE /* selectedImageGallery@3x.png in Resources */,
-				5145528E2059DEA400427DCE /* ic_camera_white_24dp.pdf in Resources */,
-				514552912059DEE000427DCE /* ic_save_photo.png in Resources */,
-				5145528B2059DEA400427DCE /* ic_start_rec.png in Resources */,
-				5145528D2059DEA400427DCE /* ic_stop_rec.png in Resources */,
-				5145528C2059DEA400427DCE /* video@3x.png in Resources */,
 				514BA0A520596E1E00744CD3 /* README.md in Resources */,
 				514BA09F20596BEF00744CD3 /* MediaPicker.storyboard in Resources */,
 			);
