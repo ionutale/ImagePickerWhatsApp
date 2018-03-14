@@ -24,6 +24,7 @@
 		514BA0A920597DCA00744CD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0A820597DCA00744CD3 /* AVFoundation.framework */; };
 		514BA0AB20597DD700744CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0AA20597DD600744CD3 /* Foundation.framework */; };
 		514BA0AD20597DDD00744CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0AC20597DDD00744CD3 /* UIKit.framework */; };
+		514BA1092059919A00744CD3 /* ImagePickerWhatsApp.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 514BA1082059919A00744CD3 /* ImagePickerWhatsApp.podspec */; };
 		5157C9D320552E18000B17BC /* ImagePickerWhatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */; };
 		5157C9D820552E18000B17BC /* ImagePickerWhatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157C9D720552E18000B17BC /* ImagePickerWhatsAppTests.swift */; };
 		5157C9DA20552E18000B17BC /* ImagePickerWhatsApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -56,6 +57,7 @@
 		514BA0A820597DCA00744CD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		514BA0AA20597DD600744CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		514BA0AC20597DDD00744CD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		514BA1082059919A00744CD3 /* ImagePickerWhatsApp.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ImagePickerWhatsApp.podspec; sourceTree = "<group>"; };
 		5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePickerWhatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerWhatsApp.h; sourceTree = "<group>"; };
 		5157C9CD20552E18000B17BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		5157C9BF20552E18000B17BC = {
 			isa = PBXGroup;
 			children = (
+				514BA1082059919A00744CD3 /* ImagePickerWhatsApp.podspec */,
 				5157C9CB20552E18000B17BC /* ImagePickerWhatsApp */,
 				5157C9D620552E18000B17BC /* ImagePickerWhatsAppTests */,
 				5157C9CA20552E18000B17BC /* Products */,
@@ -260,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514BA1092059919A00744CD3 /* ImagePickerWhatsApp.podspec in Resources */,
 				514BA09D20596BEF00744CD3 /* ImageVideoPickerCell.xib in Resources */,
 				514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */,
 				514BA0A520596E1E00744CD3 /* README.md in Resources */,

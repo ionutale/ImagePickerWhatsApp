@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,21 +17,21 @@
 
 /* Begin PBXFileReference section */
 		08741C1021A693F8BD5A47FC42788C8D /* Pods-ImagePickerWhatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImagePickerWhatsApp.release.xcconfig"; sourceTree = "<group>"; };
-		0A25F6C141126E658DCA6F06601B5771 /* Pods_ImagePickerWhatsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePickerWhatsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A25F6C141126E658DCA6F06601B5771 /* Pods_ImagePickerWhatsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImagePickerWhatsAppTests.framework; path = "Pods-ImagePickerWhatsAppTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12BE15C869D6C2E0DD906114CA14EAB2 /* Pods-ImagePickerWhatsApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImagePickerWhatsApp-acknowledgements.plist"; sourceTree = "<group>"; };
 		2187C217648E71042EABF3417D186FD4 /* Pods-ImagePickerWhatsApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImagePickerWhatsApp-acknowledgements.markdown"; sourceTree = "<group>"; };
 		267AF5FA300B018EC45B066370A8DEB0 /* Pods-ImagePickerWhatsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ImagePickerWhatsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		28960BFF752478DE204928CE1E1FFF9C /* Pods-ImagePickerWhatsAppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ImagePickerWhatsAppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2B339343321B84AF73CE50B22B4DF2E5 /* Pods-ImagePickerWhatsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImagePickerWhatsApp.modulemap"; sourceTree = "<group>"; };
+		2B339343321B84AF73CE50B22B4DF2E5 /* Pods-ImagePickerWhatsApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ImagePickerWhatsApp.modulemap"; sourceTree = "<group>"; };
 		317540ACC0EE76340D342A644382DF28 /* Pods-ImagePickerWhatsAppTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImagePickerWhatsAppTests-frameworks.sh"; sourceTree = "<group>"; };
 		34A5D158883C0D6E51884427C36CAB59 /* Pods-ImagePickerWhatsAppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ImagePickerWhatsAppTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		412FDD68724A798C77BF1B895CEB67C0 /* Pods-ImagePickerWhatsAppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImagePickerWhatsAppTests-dummy.m"; sourceTree = "<group>"; };
 		5772414E98C463D172E18E62875E5F49 /* Pods-ImagePickerWhatsApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImagePickerWhatsApp-resources.sh"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7710590E12F593406C63B3F744A35AD9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CE966F14BD41D365CA3954327B14FFD /* Pods-ImagePickerWhatsAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ImagePickerWhatsAppTests.modulemap"; sourceTree = "<group>"; };
-		9337CF0EBB9016062C5A49F97D376663 /* Pods_ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImagePickerWhatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7CE966F14BD41D365CA3954327B14FFD /* Pods-ImagePickerWhatsAppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ImagePickerWhatsAppTests.modulemap"; sourceTree = "<group>"; };
+		9337CF0EBB9016062C5A49F97D376663 /* Pods_ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ImagePickerWhatsApp.framework; path = "Pods-ImagePickerWhatsApp.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		999339EC244220A89495531316712EC0 /* Pods-ImagePickerWhatsAppTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ImagePickerWhatsAppTests-resources.sh"; sourceTree = "<group>"; };
 		A2F2729633695BCBAD47F26129C8CBA7 /* Pods-ImagePickerWhatsApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ImagePickerWhatsApp-umbrella.h"; sourceTree = "<group>"; };
 		A9B8741FB273B5676DA08131D38649AB /* Pods-ImagePickerWhatsApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ImagePickerWhatsApp-dummy.m"; sourceTree = "<group>"; };
@@ -203,7 +203,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0700;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -257,7 +257,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -265,7 +264,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -384,7 +382,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -392,7 +389,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
