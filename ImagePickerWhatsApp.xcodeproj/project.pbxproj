@@ -19,6 +19,7 @@
 		514BA0A020596BEF00744CD3 /* MediaPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 514BA09420596BEF00744CD3 /* MediaPicker.storyboard */; };
 		514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A120596CD900744CD3 /* Assets.xcassets */; };
 		514BA0A320596CD900744CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A120596CD900744CD3 /* Assets.xcassets */; };
+		514BA0A520596E1E00744CD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A420596E1E00744CD3 /* README.md */; };
 		5157C9D320552E18000B17BC /* ImagePickerWhatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */; };
 		5157C9D820552E18000B17BC /* ImagePickerWhatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157C9D720552E18000B17BC /* ImagePickerWhatsAppTests.swift */; };
 		5157C9DA20552E18000B17BC /* ImagePickerWhatsApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -46,6 +47,7 @@
 		514BA09320596BEF00744CD3 /* ImageVideoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageVideoPickerCell.xib; sourceTree = "<group>"; };
 		514BA09420596BEF00744CD3 /* MediaPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaPicker.storyboard; sourceTree = "<group>"; };
 		514BA0A120596CD900744CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		514BA0A420596E1E00744CD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePickerWhatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerWhatsApp.h; sourceTree = "<group>"; };
 		5157C9CD20552E18000B17BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				514BA09320596BEF00744CD3 /* ImageVideoPickerCell.xib */,
 				514BA09420596BEF00744CD3 /* MediaPicker.storyboard */,
 				5157C9CD20552E18000B17BC /* Info.plist */,
+				514BA0A420596E1E00744CD3 /* README.md */,
 				514BA0A120596CD900744CD3 /* Assets.xcassets */,
 			);
 			path = ImagePickerWhatsApp;
@@ -243,6 +246,7 @@
 			files = (
 				514BA09D20596BEF00744CD3 /* ImageVideoPickerCell.xib in Resources */,
 				514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */,
+				514BA0A520596E1E00744CD3 /* README.md in Resources */,
 				514BA09F20596BEF00744CD3 /* MediaPicker.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
