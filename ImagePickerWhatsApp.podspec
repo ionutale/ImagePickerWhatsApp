@@ -27,6 +27,7 @@ i was searching for a pod that will allow me to select media files like whatsapp
   #  Specify a social_media_url where others can refer to, for example a twitter
   #  profile URL.
   #
+# fasdfasdfa
 
   s.author             = { "ion utale" => "ion.utale@icloud.com" }
   s.platform     = :ios, "11.0"
