@@ -3,18 +3,19 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "ImagePickerWhatsApp"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "Capture Image, Capture Video, Select Image from Library, Select Video from Library."
 
   s.description  = <<-DESC
+--- i need some help supporting iOS 9 and 10 ---
 i was searching for a pod that will allow me to select media files like whatsapp does, but i wasn't able to find one so i created my own.
                    DESC
 
-  s.homepage     = "http://EXAMPLE/ImagePickerWhatsApp"
+  s.homepage     = "https://github.com/jhonyourangel/ImagePickerWhatsApp.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = "MIT (example)"
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = { :type => "MIT", :file => "/Users/aiu/Documents/cocoapods/ImagePickerWhatsApp/LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -28,7 +29,9 @@ i was searching for a pod that will allow me to select media files like whatsapp
   #
 
   s.author             = { "ion utale" => "ion.utale@icloud.com" }
-  s.platform     = :ios, "9.0"
+  s.platform     = :ios, "11.0"
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
+
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -38,12 +41,10 @@ i was searching for a pod that will allow me to select media files like whatsapp
 
   s.source       = { :git => "https://github.com/jhonyourangel/ImagePickerWhatsApp.git", :tag => "#{s.version}" }
 
-  s.source_files = "ImagePickerWhatsApp/*"
-  s.resource  = "ImagePickerWhatsApp/*"
-s.framework = "UIKit"
-s.framework = "Foundation"
-s.framework = "Photos"
-s.framework = "AVFoundation"
+  s.exclude_files = '*.md'
+  s.source_files = "ImagePickerWhatsApp/*.swift"
+  s.resource  = "ImagePickerWhatsApp/*.{png,jpeg,jpg,storyboard,xib, xcassets}"
 
+#s.frameworks = "UIKit", "Foundation", "Photos", "AVFoundation"
 
 end

@@ -20,6 +20,10 @@
 		514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A120596CD900744CD3 /* Assets.xcassets */; };
 		514BA0A320596CD900744CD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A120596CD900744CD3 /* Assets.xcassets */; };
 		514BA0A520596E1E00744CD3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 514BA0A420596E1E00744CD3 /* README.md */; };
+		514BA0A720597DAE00744CD3 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0A620597DAE00744CD3 /* Photos.framework */; };
+		514BA0A920597DCA00744CD3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0A820597DCA00744CD3 /* AVFoundation.framework */; };
+		514BA0AB20597DD700744CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0AA20597DD600744CD3 /* Foundation.framework */; };
+		514BA0AD20597DDD00744CD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 514BA0AC20597DDD00744CD3 /* UIKit.framework */; };
 		5157C9D320552E18000B17BC /* ImagePickerWhatsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */; };
 		5157C9D820552E18000B17BC /* ImagePickerWhatsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5157C9D720552E18000B17BC /* ImagePickerWhatsAppTests.swift */; };
 		5157C9DA20552E18000B17BC /* ImagePickerWhatsApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -48,6 +52,10 @@
 		514BA09420596BEF00744CD3 /* MediaPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaPicker.storyboard; sourceTree = "<group>"; };
 		514BA0A120596CD900744CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		514BA0A420596E1E00744CD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		514BA0A620597DAE00744CD3 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		514BA0A820597DCA00744CD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		514BA0AA20597DD600744CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		514BA0AC20597DDD00744CD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5157C9C920552E18000B17BC /* ImagePickerWhatsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImagePickerWhatsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5157C9CC20552E18000B17BC /* ImagePickerWhatsApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerWhatsApp.h; sourceTree = "<group>"; };
 		5157C9CD20552E18000B17BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514BA0AD20597DDD00744CD3 /* UIKit.framework in Frameworks */,
+				514BA0AB20597DD700744CD3 /* Foundation.framework in Frameworks */,
+				514BA0A920597DCA00744CD3 /* AVFoundation.framework in Frameworks */,
+				514BA0A720597DAE00744CD3 /* Photos.framework in Frameworks */,
 				BAF03DE300525A1E18C87E94 /* Pods_ImagePickerWhatsApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +151,10 @@
 		FD9B74A24A0DA154965A3627 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				514BA0AC20597DDD00744CD3 /* UIKit.framework */,
+				514BA0AA20597DD600744CD3 /* Foundation.framework */,
+				514BA0A820597DCA00744CD3 /* AVFoundation.framework */,
+				514BA0A620597DAE00744CD3 /* Photos.framework */,
 				A93A183DBAF6D2DC26E4DC0E /* Pods_ImagePickerWhatsApp.framework */,
 				7A10AD62A247EBE7CC1A5DD3 /* Pods_ImagePickerWhatsAppTests.framework */,
 			);
@@ -207,7 +223,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = ion.utale;
 				TargetAttributes = {
 					5157C9C820552E18000B17BC = {
@@ -394,6 +410,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -401,6 +418,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -435,6 +453,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -454,6 +473,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -461,6 +481,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -487,6 +508,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
