@@ -73,7 +73,7 @@ open class ImageVideoPicker: UIViewController {
     fileprivate let imageManager = PHCachingImageManager()
     fileprivate var thumbnailSize: CGSize!
     
-    static func makeVCFromStoryboard() -> ImageVideoPicker {
+    open static func makeVCFromStoryboard() -> ImageVideoPicker {
         let bundle = Bundle(for: ImageVideoPicker.self)
         return UIStoryboard(name: "MediaPicker", bundle: bundle).instantiateViewController(withIdentifier: "picker") as! ImageVideoPicker
     }
