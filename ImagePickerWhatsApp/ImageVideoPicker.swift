@@ -26,7 +26,7 @@ class MediaFile {
     @objc optional func onDoneSelection(assets: [PHAsset])
 }
 
-class ImageVideoPicker: UIViewController {
+open class ImageVideoPicker: UIViewController {
     
     var destinationPath: URL?
     
@@ -77,14 +77,14 @@ class ImageVideoPicker: UIViewController {
         return UIStoryboard(name: "MediaPicker", bundle: nil).instantiateViewController(withIdentifier: "picker") as! ImageVideoPicker
     }
     
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         collectionView.register(UINib(nibName: "ImageVideoPickerCell", bundle: nil), forCellWithReuseIdentifier: "asset")
         preparePhotoLibrary()
         let tap = UITapGestureRecognizer.init(target: self, action: #selector(toggleCollectionViewAction))
         toggleCollectionView.addGestureRecognizer(tap)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override open func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         changeMode(nil)
     }
@@ -179,11 +179,11 @@ class ImageVideoPicker: UIViewController {
 
 extension ImageVideoPicker: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return allPhotos.count
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell: ImageVideoPickerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "asset", for: indexPath) as! ImageVideoPickerCell
         
@@ -198,7 +198,7 @@ extension ImageVideoPicker: UICollectionViewDelegate, UICollectionViewDataSource
         return cell
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let asset = allPhotos.object(at: indexPath.item)
         
         let cell = collectionView.cellForItem(at: indexPath) as! ImageVideoPickerCell
@@ -216,18 +216,18 @@ extension ImageVideoPicker: UICollectionViewDelegate, UICollectionViewDataSource
 
 extension ImageVideoPicker: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize.init(width: collectionView.frame.size.height - 10, height: collectionView.frame.size.height - 10)
     }
 }
 
 extension ImageVideoPicker: AVCaptureFileOutputRecordingDelegate {
-    func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
+    public func fileOutput(_ output: AVCaptureFileOutput, didFinishRecordingTo outputFileURL: URL, from connections: [AVCaptureConnection], error: Error?) {
         print("did finish registering")
         UISaveVideoAtPathToSavedPhotosAlbum(outputFileURL.path, self, nil, nil);
     }
     
-    func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
+    public func fileOutput(_ output: AVCaptureFileOutput, didStartRecordingTo fileURL: URL, from connections: [AVCaptureConnection]) {
         print("did start registering")
     }
 }
@@ -236,7 +236,7 @@ extension ImageVideoPicker: AVCaptureFileOutputRecordingDelegate {
 extension ImageVideoPicker: AVCapturePhotoCaptureDelegate {
     
     @available(iOS 11.0, *)
-    func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
+    public func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
         if let error = error { print(error.localizedDescription) }
         
         if let imageData = photo.fileDataRepresentation() {
@@ -247,7 +247,7 @@ extension ImageVideoPicker: AVCapturePhotoCaptureDelegate {
     }
     
     //For iOS 10 or below
-    func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
+    public func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
         
         if let error = error {
             print(error.localizedDescription)
@@ -370,7 +370,7 @@ extension ImageVideoPicker {
 
 // MARK : - get images and videos
 extension ImageVideoPicker: PHPhotoLibraryChangeObserver {
-    func photoLibraryDidChange(_ changeInstance: PHChange) {
+    public func photoLibraryDidChange(_ changeInstance: PHChange) {
         // Change notifications may be made on a background queue. Re-dispatch to the
         // main queue before acting on the change as we'll be updating the UI.
         DispatchQueue.main.sync {
@@ -415,7 +415,7 @@ extension ImageVideoPicker {
 
 // extract video testing
 extension ImageVideoPicker {
-    static func getDataFrom(asset: PHAsset, completion: @escaping(Data?) -> ()) {
+    open  static func getDataFrom(asset: PHAsset, completion: @escaping(Data?) -> ()) {
         if asset.mediaType == .image {
             ImageVideoPicker.getDataFor(imageAsset: asset) { data in
                 completion(data)
