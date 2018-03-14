@@ -123,15 +123,17 @@ open class ImageVideoPicker: UIViewController {
     }
     
     @IBAction func changeMode(_ sender: UIButton!) {
+        let bundle = Bundle(for: ImageVideoPicker.self)
+
         if(captureType == .photo) {
             captureType = .video
-            cameraButton.setImage(#imageLiteral(resourceName: "ic_start_rec"), for: .normal)
-            mediaModeButton.setImage(#imageLiteral(resourceName: "ic_camera_white_24dp"), for: .normal)
+            cameraButton.setImage(UIImage(named: "ic_start_rec", in: bundle,compatibleWith: nil)!, for: .normal)
+            mediaModeButton.setImage(UIImage(named: "ic_camera_white_24dp", in: bundle,compatibleWith: nil)!, for: .normal)
             registerTime.isHidden = false
         } else {
             captureType = .photo
-            cameraButton.setImage(#imageLiteral(resourceName: "ic_save_photo"), for: .normal)
-            mediaModeButton.setImage(#imageLiteral(resourceName: "video"), for: .normal)
+            cameraButton.setImage(UIImage(named: "ic_save_photo", in: bundle,compatibleWith: nil)!, for: .normal)
+            mediaModeButton.setImage(UIImage(named: "video", in: bundle,compatibleWith: nil)!, for: .normal)
             registerTime.isHidden = true
         }
         setupCamera()
@@ -140,6 +142,7 @@ open class ImageVideoPicker: UIViewController {
     
     @IBAction func savePicture(_ sender: UIButton!) {
         guard imageOutput != nil || videoOutput != nil else  { return }
+        let bundle = Bundle(for: ImageVideoPicker.self)
 
         switch captureType {
         case .photo:
@@ -152,7 +155,7 @@ open class ImageVideoPicker: UIViewController {
             if videoOutput!.isRecording {
                 timer?.invalidate()
                 showCollectionView()
-                cameraButton.setImage(#imageLiteral(resourceName: "ic_start_rec"), for: .normal)
+                cameraButton.setImage(UIImage(named: "ic_start_rec", in: bundle,compatibleWith: nil)!, for: .normal)
                 videoOutput?.stopRecording()
                 mediaModeButton.isEnabled = true
                 collectionView.isHidden = false
@@ -161,7 +164,7 @@ open class ImageVideoPicker: UIViewController {
                 hideCollectionView()
                 mediaModeButton.isEnabled = false
                 collectionView.isHidden = true
-                cameraButton.setImage(#imageLiteral(resourceName: "ic_stop_rec"), for: .normal)
+                cameraButton.setImage(UIImage(named: "ic_stop_rec", in: bundle,compatibleWith: nil)!, for: .normal)
                 captureVideo()
             }
         default:
