@@ -52,7 +52,7 @@
 		514BA09320596BEF00744CD3 /* ImageVideoPickerCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageVideoPickerCell.xib; sourceTree = "<group>"; };
 		514BA09420596BEF00744CD3 /* MediaPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaPicker.storyboard; sourceTree = "<group>"; };
 		514BA0A120596CD900744CD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		514BA0A420596E1E00744CD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		514BA0A420596E1E00744CD3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ImagePickerWhatsApp/README.md; sourceTree = "<group>"; };
 		514BA0A620597DAE00744CD3 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		514BA0A820597DCA00744CD3 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		514BA0AA20597DD600744CD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -97,6 +97,7 @@
 		5157C9BF20552E18000B17BC = {
 			isa = PBXGroup;
 			children = (
+				514BA0A420596E1E00744CD3 /* README.md */,
 				514BA1082059919A00744CD3 /* ImagePickerWhatsApp.podspec */,
 				5157C9CB20552E18000B17BC /* ImagePickerWhatsApp */,
 				5157C9D620552E18000B17BC /* ImagePickerWhatsAppTests */,
@@ -125,7 +126,6 @@
 				514BA09320596BEF00744CD3 /* ImageVideoPickerCell.xib */,
 				514BA09420596BEF00744CD3 /* MediaPicker.storyboard */,
 				5157C9CD20552E18000B17BC /* Info.plist */,
-				514BA0A420596E1E00744CD3 /* README.md */,
 				514BA0A120596CD900744CD3 /* Assets.xcassets */,
 			);
 			path = ImagePickerWhatsApp;

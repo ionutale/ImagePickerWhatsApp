@@ -20,10 +20,9 @@ class MediaFile {
     var path: URL?
 }
 
-@objc protocol ImageVideoPickerDelegate {
-    @objc optional func onCancel()
-//    func onDoneSelection(urls: [MediaFile])
-    @objc optional func onDoneSelection(assets: [PHAsset])
+public protocol ImageVideoPickerDelegate {
+    func onCancel()
+    func onDoneSelection(assets: [PHAsset])
 }
 
 open class ImageVideoPicker: UIViewController {
@@ -68,7 +67,7 @@ open class ImageVideoPicker: UIViewController {
     }
     @IBOutlet var doneBtn: UIButton!
 
-    var delegate: ImageVideoPickerDelegate?
+    public var delegate: ImageVideoPickerDelegate?
     
     fileprivate let imageManager = PHCachingImageManager()
     fileprivate var thumbnailSize: CGSize!
@@ -115,9 +114,9 @@ open class ImageVideoPicker: UIViewController {
     
     @IBAction func doneAction(_ sender: Any) {
         if selectedPhotos.count == 0 {
-            delegate?.onCancel!()
+            delegate?.onCancel()
         } else {
-            delegate?.onDoneSelection!(assets: selectedPhotos)
+            delegate?.onDoneSelection(assets: selectedPhotos)
         }
         self.dismiss(animated: true, completion: nil)
     }

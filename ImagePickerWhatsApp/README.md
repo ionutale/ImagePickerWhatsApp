@@ -1,56 +1,104 @@
 # ImageVideoPicker
-This is an image and video picker from the galery of an iOS device. It has been make similar to the whatsup one.
+I was searching for a similar Image and Video Picker for a project and i wasn't able to find one that was able to :
+1. Take picture
+2. Get a Picture from the library
+3. Register a Video
+4. Get a video from the library
+
+While i was looking i hopen whatsup of facebook or mabe google have a pod for this kind of needs, i realy liked the whatsapp picker, so i created this one similer to the one in whatsapp.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+In order to use ImageVideoPicker you need cocoapods and an xCode project already created
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+to install cocoapods is should be enough just to run `sudo gem install cocoapods` in the terminal
+if this doen't work go to [cocoapods](https://cocoapods.org/)
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Then navigate the terminal to your project folder, where the file extension `.xcodeproj` is located and run `pod init`
+this will create a file called `Podfile`
+Open the file in a editor ( sublimeText, xCode, atom, vim ... etc ) and add the line bellow after `use_frameworks!`
 
 ```
-until finished
+pod 'ImagePickerWhatsApp'
+```
+or 
+```
+pod 'ImagePickerWhatsApp', :path => '/Users/aiu/Documents/cocoapods/ImagePickerWhatsApp'
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+then just run `pod install` in the terminal and wait to finish instaling the lib
 
-## Running the tests
+### How to use it
 
-Explain how to run the automated tests for this system
+add `import ImagePickerWhatsApp` to your viewcontroller class
 
-### Break down into end to end tests
-
-Explain what these tests test and why
-
+then you can call the picker by calling :
 ```
-Give an example
+let mp = ImageVideoPicker.makeVCFromStoryboard()
+self.present(mp, animated: true, completion: nil)
 ```
 
-### And coding style tests
+### Delegate
+to implement the delegate add `mp.delegate = self` and the extent the class of you view controller
+aso you need to import the iOS Photos framework `import Photos`
 
-Explain what these tests test and why
+````
+extension Login: ImageVideoPickerDelegate {
+    func onCancel() {
+        print("no picture selected")
+    }
+
+    func onDoneSelection(assets: [PHAsset]) {
+       print("selected \(assets.count) assets")
+    }
+}
+````
+
+the func `onDoneSelection` returns an array of assets that contain the info of where the asset is located : on the device, iTunes library or iCloud.
+
+if you just need to display the images you can use the this code in a collection view or something similar just implement this peace of code
+````
+var representedAssetIdentifier: String!
+
+func getImageFrom(asset: Phasset) {
+    representedAssetIdentifier = asset?.localIdentifier
+    let imageManager = PHCachingImageManager()
+
+    imageManager.requestImage(for: asset!, targetSize: self.frame.size, contentMode: .default, options: nil) { (image, _) in
+
+        if(self.representedAssetIdentifier == self.asset?.localIdentifier &&
+            image != nil) {
+            self.imageView.image = image
+        }
+    }
+}
+
+````
+
+this will show just the thumbnail, but is awesome because is also showing the thumbnail for live photos, and videos
+
+### Images and Videos as Data
+
+The lib is intended to be used for sending images or videos over the network, and not to do fancy image or video editing. But this doesn't mea you can't. You can do just about anything since it returns an array of assets, but is you job to implement what you need.
+
+in order to get the data from the asset ImageVideoPicker has one method that will return an completition handler with the data. 
 
 ```
-Give an example
+ImageVideoPicker.getDataFrom(asset: asset) { (data) in
+    if data == nil {
+        print(data as Any, asset.mediaType, asset.localIdentifier)
+    } else {
+        print(data!.count as Any, asset.mediaType, asset.localIdentifier)
+    }
+}
 ```
-
+that will be all
+have fun
 
 ## Authors
 

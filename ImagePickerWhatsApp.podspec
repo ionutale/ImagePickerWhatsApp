@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "ImagePickerWhatsApp"
-  s.version      = "0.1.1"
+  s.version      = "1.0.0"
   s.summary      = "Capture Image, Capture Video, Select Image from Library, Select Video from Library."
 
   s.description  = <<-DESC
