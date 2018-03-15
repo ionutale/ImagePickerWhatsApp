@@ -48,7 +48,7 @@ to implement the delegate add `mp.delegate = self` and the extent the class of y
 aso you need to import the iOS Photos framework `import Photos`
 
 ````
-extension Login: ImageVideoPickerDelegate {
+extension ViewController: ImageVideoPickerDelegate {
     func onCancel() {
         print("no picture selected")
     }
