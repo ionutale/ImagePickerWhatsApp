@@ -43,6 +43,17 @@ let mp = ImageVideoPicker.makeVCFromStoryboard()
 self.present(mp, animated: true, completion: nil)
 ```
 
+### Info.plist
+open `info.plsit` as `source code` and insert at the end (  before the ` </dict> </plist> `)  and save
+```
+<key>NSPhotoLibraryUsageDescription</key>
+<string>This app requires access to the photo library.</string>
+<key>NSCameraUsageDescription</key>
+<string>This app requires access to the camera.</string>
+```
+
+after inserting the lines above open the info.plist as `property list` this will set the xCode to open all the other plist files as `property list`
+
 ### Delegate
 to implement the delegate add `mp.delegate = self` and the extent the class of you view controller
 aso you need to import the iOS Photos framework `import Photos`

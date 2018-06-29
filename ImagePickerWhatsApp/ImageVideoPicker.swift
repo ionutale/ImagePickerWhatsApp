@@ -288,14 +288,14 @@ extension ImageVideoPicker {
     }
     
     func setupCamera () {
-        // Setup your camera here...
-        session = AVCaptureSession()
-        session!.sessionPreset = AVCaptureSession.Preset.medium
-        
         guard let backCamera = AVCaptureDevice.default(for: AVMediaType.video) else {
             print("simulator has no camera")
             return
         }
+        
+        // Setup your camera here...
+        session = AVCaptureSession()
+        session!.sessionPreset = AVCaptureSession.Preset.medium
         
         var error: NSError?
         var input: AVCaptureDeviceInput?

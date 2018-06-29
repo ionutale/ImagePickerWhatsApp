@@ -15,7 +15,7 @@ i was searching for a pod that will allow me to select media files like whatsapp
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
   s.license      = "MIT (example)"
-  s.license      = { :type => "MIT", :file => "/Users/aiu/Documents/cocoapods/ImagePickerWhatsApp/LICENSE" }
+  s.license      = { :type => "MIT", :https => "https://github.com/jhonyourangel/ImagePickerWhatsApp/blob/master/LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -30,7 +30,9 @@ i was searching for a pod that will allow me to select media files like whatsapp
 # fasdfasdfa
 
   s.author             = { "ion utale" => "ion.utale@icloud.com" }
-  s.platform     = :ios, "10.0"
+  #s.platform     = :ios, "11.0"
+  s.platform = :ios
+  s.ios.deployment_target = '10.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 
 
@@ -44,7 +46,9 @@ i was searching for a pod that will allow me to select media files like whatsapp
 
   s.exclude_files = '*.md'
   s.source_files = "ImagePickerWhatsApp/*.swift"
-  s.resource  = "ImagePickerWhatsApp/*.{png,jpeg,jpg,pdf,storyboard,xib, xcassets}", "ImagePickerWhatsApp/*.xcassets"
+  s.resource  = "ImagePickerWhatsApp/*.{png,jpeg,jpg,pdf,storyboard,xib, xcassets}",
+  "ImagePickerWhatsApp/*.xcassets",
+  "ImagePickerWhatsApp/Images.xcassets"
 
 #s.frameworks = "UIKit", "Foundation", "Photos", "AVFoundation"
 
