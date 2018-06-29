@@ -28,7 +28,7 @@ pod 'ImagePickerWhatsApp'
 ```
 or 
 ```
-pod 'ImagePickerWhatsApp', :path => '/Users/aiu/Documents/cocoapods/ImagePickerWhatsApp'
+pod 'ImagePickerWhatsApp', :git => 'https://github.com/jhonyourangel/ImagePickerWhatsApp.git'
 ```
 
 then just run `pod install` in the terminal and wait to finish instaling the lib
