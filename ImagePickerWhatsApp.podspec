@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   s.name         = "ImagePickerWhatsApp"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "Capture Image, Capture Video, Select Image from Library, Select Video from Library."
 
   s.description  = <<-DESC
@@ -30,7 +30,7 @@ i was searching for a pod that will allow me to select media files like whatsapp
 # fasdfasdfa
 
   s.author             = { "ion utale" => "ion.utale@icloud.com" }
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "10.0"
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4' }
 
 

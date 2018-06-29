@@ -251,6 +251,7 @@ extension ImageVideoPicker: AVCapturePhotoCaptureDelegate {
     }
     
     //For iOS 10 or below
+    @available(iOS, introduced: 10.0, deprecated:11.0, message:"Check Documentation or contact ion.utale@icloud.com")
     public func photoOutput(_ captureOutput: AVCapturePhotoOutput, didFinishProcessingPhoto photoSampleBuffer: CMSampleBuffer?, previewPhoto previewPhotoSampleBuffer: CMSampleBuffer?, resolvedSettings: AVCaptureResolvedPhotoSettings, bracketSettings: AVCaptureBracketedStillImageSettings?, error: Error?) {
         
         if let error = error {

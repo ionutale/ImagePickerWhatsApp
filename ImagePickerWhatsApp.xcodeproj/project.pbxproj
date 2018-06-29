@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		512537E1205A762B000CFE02 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 512537E0205A762B000CFE02 /* README.md */; };
 		514BA09720596BEF00744CD3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09020596BEF00744CD3 /* Date+Extension.swift */; };
 		514BA09820596BEF00744CD3 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09020596BEF00744CD3 /* Date+Extension.swift */; };
 		514BA09920596BEF00744CD3 /* ImageVideoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514BA09120596BEF00744CD3 /* ImageVideoPicker.swift */; };
@@ -47,7 +46,6 @@
 		0444157CA0AB50CD388267CA /* Pods-ImagePickerWhatsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsAppTests/Pods-ImagePickerWhatsAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		21A4513942471CE5639D68A2 /* Pods-ImagePickerWhatsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsAppTests/Pods-ImagePickerWhatsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		40D450458901778983404589 /* Pods-ImagePickerWhatsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImagePickerWhatsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ImagePickerWhatsApp/Pods-ImagePickerWhatsApp.release.xcconfig"; sourceTree = "<group>"; };
-		512537E0205A762B000CFE02 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		514BA09020596BEF00744CD3 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		514BA09120596BEF00744CD3 /* ImageVideoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPicker.swift; sourceTree = "<group>"; };
 		514BA09220596BEF00744CD3 /* ImageVideoPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageVideoPickerCell.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			isa = PBXGroup;
 			children = (
 				514BA0A420596E1E00744CD3 /* README.md */,
-				512537E0205A762B000CFE02 /* README.md */,
 				514BA1082059919A00744CD3 /* ImagePickerWhatsApp.podspec */,
 				5157C9CB20552E18000B17BC /* ImagePickerWhatsApp */,
 				5157C9D620552E18000B17BC /* ImagePickerWhatsAppTests */,
@@ -266,7 +263,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512537E1205A762B000CFE02 /* README.md in Resources */,
 				514BA1092059919A00744CD3 /* ImagePickerWhatsApp.podspec in Resources */,
 				514BA09D20596BEF00744CD3 /* ImageVideoPickerCell.xib in Resources */,
 				514BA0A220596CD900744CD3 /* Assets.xcassets in Resources */,
